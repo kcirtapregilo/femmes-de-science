@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Activité Réalité Augmentée</title>
+    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1.6.0/dist/aframe-master.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+    
+    <a-scene embedded arjs='sourceType: webcam;'>
+        
+        <a-marker type="pattern" url="https://github.com/kcirtapregilo/femmes-de-science/blob/main/pattern-marqueur%20exemple%2001%20artivive.patt">
+            
+            <a-image
+                src="https://clg-hugo.monbureaunumerique.fr/lectureFichiergw.do?ID_FICHIER=52450"
+                position="0 0.5 0" 
+                scale="1 1 1"     
+                rotation="-90 0 0">
+            </a-image>
+            
+        </a-marker>
+        
+        <a-entity camera></a-entity>
+        
+    </a-scene>
+</body>
+</html>
